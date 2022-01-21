@@ -12,23 +12,23 @@ function App() {
                     <Switch>
                         <Route
                             exact
-                            path='/email-login'
+                            path='/ui/email-login'
                             render={(props) => <Login {...props} method={`email`} />}
                         />
                         <Route
                             exact
-                            path='/login'
+                            path='/ui/login'
                             render={(props) => <Login {...props} method={`username`} />}
                         />
-                        <Route exact path='/admin' component={Admin} />
+                        <Route exact path='/ui/admin' component={Admin} />
                         <Route
                             exact
-                            path='/admin/create'
+                            path='/ui/admin/create'
                             render={(props) => <EditUser {...props} action={`create`} />}
                         />
                         <Route
                             exact
-                            path='/admin/update'
+                            path='/ui/admin/update'
                             render={(props) => <EditUser {...props} action={`edit`} />}
                         />
                     </Switch>

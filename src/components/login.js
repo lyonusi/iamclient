@@ -6,9 +6,9 @@ class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: 'name5',
-            email: 'user5@email.com',
-            password: 'password5',
+            username: 'name4',
+            email: 'user4@email.com',
+            password: 'password4',
         };
     }
 
@@ -98,7 +98,7 @@ class Login extends React.Component {
 
     routeChangeToAdmin = () => {
         console.log('route change to admin page');
-        const path = '/admin';
+        const path = '/ui/admin';
         this.props.history.push(path);
     };
 

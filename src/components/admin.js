@@ -34,13 +34,13 @@ class Admin extends React.Component {
         console.log('route change to edit');
         const userInfoString = JSON.stringify(userInfo);
         localStorage.setItem('editUserInfo', userInfoString);
-        const path = '/admin/update';
+        const path = '/ui/admin/update';
         this.props.history.push(path);
     };
 
     routeChangeToCreate = () => {
         console.log('route change to create user');
-        const path = '/admin/create';
+        const path = '/ui/admin/create';
         this.props.history.push(path);
     };
 

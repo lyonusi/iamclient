@@ -25,7 +25,7 @@ class EditUser extends React.Component {
 
     routeChangeToAdmin = () => {
         console.log('route change to admin page');
-        let path = '/admin';
+        let path = '/ui/admin';
         this.props.history.push(path);
         this.setState({ diplayReturnButton: false, checkForm: '', userMessage: '' });
     };
